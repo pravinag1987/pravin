@@ -55,7 +55,7 @@ object loop1 {
   def main(args: Array[String]) = {
     
      val conf = new SparkConf()
-      .setAppName("SparkLoad")
+      .setAppName("SparkLoad1")
       .setMaster("local")
     val sc = new SparkContext(conf)
     
