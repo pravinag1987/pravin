@@ -81,7 +81,7 @@ object loop1 {
        
        val line2 = line1.map(x => (x(0).toInt, x(1).toString, x(2).toString, x(3).toString)).collect()
        
-       val line3 = sc.parallelize(line2).toDF("DepartmentID", "Name","GroupName","ModifiedDate")
+       val line3 = sc.parallelize(line2).toDF("DepartmentID", "Name34","GroupName","ModifiedDate")
        
        
        MongoSpark.save(line3, WriteConfig(Map("uri" -> "mongodb://127.0.0.1/Test.HumanResources_Department")))
